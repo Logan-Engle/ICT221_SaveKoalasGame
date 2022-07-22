@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="savekoalas.gui.Controller">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="300.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="up" layoutX="83.0" layoutY="102.0" mnemonicParsing="false" text="Up" />
+                  <Button fx:id="down" layoutX="75.0" layoutY="165.0" mnemonicParsing="false" text="Down" />
+                  <Button fx:id="left" layoutX="20.0" layoutY="134.0" mnemonicParsing="false" text="Left" />
+                  <Button fx:id="right" layoutX="134.0" layoutY="134.0" mnemonicParsing="false" text="Right" />
+               </children>
+            </Pane>
+            <Label text="Difficulty:" />
+            <TextField fx:id="difficulty" />
+            <Button fx:id="startGame" mnemonicParsing="false" text="Start Game" />
+            <TextArea fx:id="gameState" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="saveGame" mnemonicParsing="false" text="Save Game" />
+            <Button fx:id="loadGame" mnemonicParsing="false" text="Load Game" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
